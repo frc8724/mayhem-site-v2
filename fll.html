@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mighty Mayhem – FIRST LEGO League</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- header omitted for brevity: copy from frc.html and change nav-active -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <img src="images/mayhem-logo.png" alt="Mayhem Robotics logo" class="brand-logo">
+        <div class="brand-title">MAYH<span>E</span>M ROBOTICS</div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="frc.html">FRC 8724</a>
+        <a href="mighty-mayhem.html" class="nav-active">Mighty Mayhem</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <h2 class="section-title">Mighty Mayhem – FIRST LEGO League</h2>
+      <p class="section-subtitle">
+        Introductory and intermediate robotics for ages 6–14 using LEGO robots and themed challenges.
+      </p>
+      <p>
+        Mighty Mayhem operates multiple FIRST LEGO League Explore and Challenge teams. Students work in
+        small groups to build LEGO models, program missions, and present their ideas to judges at local
+        events – all while practicing teamwork and core values.
+      </p>
+    </section>
+
+    <section class="section" id="challenge">
+      <h3>FIRST LEGO League Challenge (Ages 9–14)</h3>
+      <p>
+        Challenge teams build and program autonomous LEGO robots to complete missions on a themed field
+        and research a real-world problem related to the annual FIRST theme.
+      </p>
+      <p>
+        The main season runs from August through November with a qualifier event in late fall. Additional
+        spring and summer sessions may be offered as interest and mentor availability allow.
+      </p>
+    </section>
+
+    <section class="section" id="explore">
+      <h3>FIRST LEGO League Explore (Ages 6–10)</h3>
+      <p>
+        Explore teams introduce younger students to basic engineering and programming in a playful,
+        low-stress environment. Students build a LEGO model, add simple motors and sensors, and share
+        their work at a festival-style event.
+      </p>
+      <p>
+        Explore typically meets once per week across a 10–16 week season.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>&copy; <span id="year"></span> Mayhem Robotics, Inc.</div>
+      <div><a href="index.html">Back to Home</a></div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

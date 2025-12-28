@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mayhem Robotics – Bedford, NH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <img src="images/mayhem-logo.png" alt="Mayhem Robotics logo" class="brand-logo">
+        <div class="brand-title">
+          MAYH<span>E</span>M ROBOTICS
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-active">Home</a>
+        <a href="frc.html">FRC 8724</a>
+        <a href="mighty-mayhem.html">Mighty Mayhem</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero / About -->
+    <section class="section hero">
+      <div>
+        <h1>Mayhem Robotics</h1>
+        <p class="hero-tagline">
+          A student-driven, community-based robotics nonprofit in Bedford, New Hampshire.
+        </p>
+        <p>
+          Mayhem Robotics is a registered 501(c)(3) organization that helps students ages 6–18
+          learn STEM and leadership through FIRST Robotics programs, classes, and hands-on outreach
+          across Southern New Hampshire.
+        </p>
+        <p>
+          Our teams draw students from many towns and school systems. Whether a student is new to
+          robotics or ready for advanced competition, Mayhem is a place where curiosity turns into creation.
+        </p>
+
+        <div class="button-row">
+          <a href="contact.html" class="btn btn-primary">Join Mayhem</a>
+          <a href="https://your-paypal-or-venmo-link-here" class="btn btn-outline">Donate</a>
+          <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="image-panel">
+        <img src="images/team-hero.jpg" alt="Mayhem students with their robot">
+      </div>
+    </section>
+
+    <!-- Programs overview -->
+    <section class="section">
+      <h2 class="section-title">Discover. Build. Compete. Have Fun.</h2>
+      <p class="section-subtitle">
+        From LEGO robotics to 125-pound competition robots, Mayhem offers programs for students ages 6–18.
+      </p>
+
+      <div class="program-grid">
+        <article class="program-card">
+          <div class="program-meta">Grades 9–12</div>
+          <h3>FRC – Mayhem 8724</h3>
+          <p>
+            Our FIRST Robotics Competition team designs, builds, and programs a new industrial-scale robot
+            each season to compete across New England.
+          </p>
+          <p>
+            Students learn mechanical design, CAD, programming, electrical, drive team strategy, and project
+            management in a true engineering team environment.
+          </p>
+          <a class="btn btn-ghost" href="frc.html">Learn more</a>
+        </article>
+
+        <article class="program-card">
+          <div class="program-meta">Ages 9–14</div>
+          <h3>FIRST LEGO League Challenge</h3>
+          <p>
+            Mighty Mayhem FLL Challenge teams explore real-world problems, design LEGO robots to complete
+            themed missions, and present innovation projects at events.
+          </p>
+          <p>
+            Fall season runs roughly August–December with optional spring sessions.
+          </p>
+          <a class="btn btn-ghost" href="mighty-mayhem.html#challenge">Learn more</a>
+        </article>
+
+        <article class="program-card">
+          <div class="program-meta">Ages 6–10</div>
+          <h3>FIRST LEGO League Explore</h3>
+          <p>
+            Our Explore teams introduce younger students to basic engineering, sensors, and core FLL values
+            in a playful, low-pressure environment.
+          </p>
+          <p>
+            Programs emphasize creativity, teamwork, and fun through themed builds and simple code.
+          </p>
+          <a class="btn btn-ghost" href="mighty-mayhem.html#explore">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Optional short “Full STEAM Ahead” note -->
+    <section class="section">
+      <h2 class="section-title">Full STEAM Ahead</h2>
+      <p>
+        In addition to FIRST programs, Mayhem runs workshops and classes in CAD, 3D printing, basic
+        mechanics, and programming. These offerings support our teams and serve students who want
+        focused skill-building outside of competition seasons.
+      </p>
+      <div class="button-row">
+        <a href="contact.html" class="btn btn-primary">Ask about current classes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>
+        &copy; <span id="year"></span> Mayhem Robotics, Inc. · 501(c)(3) nonprofit · Bedford, NH
+      </div>
+      <div>
+        <a href="sponsors.html">Sponsor Mayhem</a> ·
+        <a href="https://www.firstinspires.org/" target="_blank" rel="noopener">FIRST Inspires</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

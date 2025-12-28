@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mayhem – FRC Team 8724</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Same header -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <img src="images/mayhem-logo.png" alt="Mayhem Robotics logo" class="brand-logo">
+        <div class="brand-title">
+          MAYH<span>E</span>M ROBOTICS
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="frc.html" class="nav-active">FRC 8724</a>
+        <a href="mighty-mayhem.html">Mighty Mayhem</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section two-column">
+      <div>
+        <h2 class="section-title">FRC Team 8724 – Mayhem</h2>
+        <p class="section-subtitle">
+          High school students designing, building, and competing with industrial-scale robots.
+        </p>
+        <p>
+          Our FIRST Robotics Competition team is open to students in grades 9–12 from Bedford and
+          surrounding communities. Each year we design, build, and program a new 120-pound robot in just
+          six to eight weeks, then compete at official FIRST events in the New England District.
+        </p>
+        <p>
+          Students can specialize in mechanical, CAD, programming, electronics, fabrication, business,
+          scouting, or drive team – or try a bit of everything. Mentors guide students through
+          real-world engineering processes, safety, and teamwork.
+        </p>
+        <div class="button-row">
+          <a href="contact.html" class="btn btn-primary">Interested in joining?</a>
+          <a href="https://www.thebluealliance.com/team/8724" class="btn btn-ghost" target="_blank" rel="noopener">
+            View team on The Blue Alliance
+          </a>
+        </div>
+      </div>
+      <div class="image-panel">
+        <img src="images/frc-robot.jpg" alt="FRC 8724 robot on the field">
+      </div>
+    </section>
+
+    <!-- Add more sections as needed: season schedule, expectations, etc. -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>&copy; <span id="year"></span> Mayhem Robotics, Inc.</div>
+      <div><a href="index.html">Back to Home</a></div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
