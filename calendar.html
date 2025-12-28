@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calendar – Mayhem Robotics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Mayhem Robotics calendar: meetings, events, competitions, outreach, and programs." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <div class="brand">
+                <a class="logo-swap" href="index.html" aria-label="Mayhem Robotics home">
+                    <img src="images/mayhemlogo.png" alt="Mayhem Robotics logo" class="logo-img logo-default" />
+                    <img src="images/jorge.png" alt="Jorge mascot" class="logo-img logo-hover" />
+                </a>
+                <div class="brand-title">MAYH<span>E</span>M ROBOTICS</div>
+            </div>
+
+            <nav class="nav">
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="frc.html">FRC 8724</a>
+                <a href="fll.html">FLL</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2 class="section-title">Calendar</h2>
+            <p class="section-subtitle">
+                Meetings, events, competitions, outreach, and program sessions. For the most up-to-date details, open
+                the calendar directly.
+            </p>
+
+            <div class="button-row">
+                <!-- Replace these with your real links (details below) -->
+                <a class="btn btn-primary"
+                    href="https://calendar.google.com/calendar/embed?src=c_bc7d1bbda88bd64946877419f7c3fa5eb56488a27f7e40bd1b0c15a26a3c3cfc%40group.calendar.google.com&ctz=America%2FNew_York"
+                    target="_blank" rel="noopener">
+                    Open in Google Calendar
+                </a>
+                <a class="btn btn-outline" href="#" target="_blank" rel="noopener">
+                    Subscribe (ICS)
+                </a>
+            </div>
+
+            <p style="margin-top: 0.9rem; color: var(--text-muted); font-size: 0.95rem;">
+                Tip: If you subscribe, updates happen automatically (recommended for parents and students).
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Upcoming Events</h3>
+            <p class="section-subtitle">
+                If the embedded view does not load (some school networks block it), use “Open in Google Calendar.”
+            </p>
+
+            <!-- Responsive embed wrapper -->
+            <div
+                style="position: relative; width: 100%; padding-top: 70%; border-radius: 12px; overflow: hidden; border: 1px solid #e2e2e2;">
+                <iframe title="Mayhem Robotics Calendar"
+                    src="https://calendar.google.com/calendar/embed?src=c_bc7d1bbda88bd64946877419f7c3fa5eb56488a27f7e40bd1b0c15a26a3c3cfc%40group.calendar.google.com&ctz=America%2FNew_York"
+                    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Notes</h3>
+            <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-muted);">
+                <li>Event times are listed in Eastern Time unless noted.</li>
+                <li>Competition schedules may change; please check details in the calendar entry.</li>
+                <li>If you need access to a private team calendar, contact us.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div>&copy; <span id="year"></span> Mayhem Robotics, Inc. · 501(c)(3) nonprofit</div>
+            <div><a href="index.html">Home</a> · <a href="contact.html">Contact</a></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

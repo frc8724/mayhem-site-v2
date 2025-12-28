@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Mighty Mayhem – FIRST LEGO League</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <!-- header omitted for brevity: copy from frc.html and change nav-active -->
   <header class="site-header">
     <div class="site-header-inner">
       <div class="brand">
-        <img src="images/mayhem-logo.png" alt="Mayhem Robotics logo" class="brand-logo">
+        <a class="logo-swap" href="index.html" aria-label="Mayhem Robotics home">
+          <img src="images/mayhemlogo.png" alt="Mayhem Robotics logo" class="logo-img logo-default" />
+          <img src="images/jorge.png" alt="Jorge mascot" class="logo-img logo-hover" />
+        </a>
         <div class="brand-title">MAYH<span>E</span>M ROBOTICS</div>
       </div>
+
       <nav class="nav">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="nav-active">Home</a>
         <a href="frc.html">FRC 8724</a>
-        <a href="mighty-mayhem.html" class="nav-active">Mighty Mayhem</a>
+        <a href="fll.html">FLL</a>
         <a href="sponsors.html">Sponsors</a>
         <a href="calendar.html">Calendar</a>
         <a href="contact.html">Contact</a>
@@ -73,4 +79,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>

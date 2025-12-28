@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact – Mayhem Robotics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Contact Mayhem Robotics. Join a team, ask about programs, volunteering, or sponsorship." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <div class="brand">
+                <a class="logo-swap" href="index.html" aria-label="Mayhem Robotics home">
+                    <img src="images/mayhemlogo.png" alt="Mayhem Robotics logo" class="logo-img logo-default" />
+                    <img src="images/jorge.png" alt="Jorge mascot" class="logo-img logo-hover" />
+                </a>
+                <div class="brand-title">MAYH<span>E</span>M ROBOTICS</div>
+            </div>
+
+            <nav class="nav">
+                <a href="index.html" class="nav-active">Home</a>
+                <a href="frc.html">FRC 8724</a>
+                <a href="fll.html">FLL</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Intro -->
+        <section class="section">
+            <h2 class="section-title">Contact Mayhem Robotics</h2>
+            <p class="section-subtitle">
+                Interested in joining a team, volunteering, sponsoring, or learning more? Send us a message and we’ll
+                respond quickly.
+            </p>
+
+            <div class="button-row">
+                <a class="btn btn-primary" href="mailto:joinmayhem@mayhemrobotics.org?subject=Mayhem%20Robotics%20Inquiry&body=Hello%20Mayhem%20Robotics%20Team%2C%0D%0A%0D%0A
+I%20have%20a%20question%20about%20Mayhem%20Robotics.%0D%0A%0D%0A
+Name%3A%0D%0A
+Phone%3A%0D%0A
+Best%20way%20to%20reach%20me%3A%0D%0A%0D%0A
+Thank%20you%2C">
+                    Email Us
+                </a>
+                <a class="btn btn-outline" href="#form">Use the Contact Form</a>
+            </div>
+
+            <p style="margin-top: 0.9rem; color: var(--text-muted); font-size: 0.95rem;">
+                If you do not have an email client configured (common on some phones/school computers), use the form
+                below.
+            </p>
+        </section>
+
+        <!-- Contact info / quick links -->
+        <section class="section two-column">
+            <div>
+                <h3 class="section-title" style="margin-bottom: 0.25rem;">What can we help with?</h3>
+                <p class="section-subtitle">Choose a category so we can route your message faster.</p>
+
+                <div class="program-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+                    <article class="program-card">
+                        <div class="program-meta">Join</div>
+                        <h3>Join Mayhem</h3>
+                        <p>Information for students and parents about FRC and FLL programs.</p>
+                    </article>
+
+                    <article class="program-card">
+                        <div class="program-meta">Volunteer</div>
+                        <h3>Mentor / Volunteer</h3>
+                        <p>Coaching, technical mentoring, event support, admin help, and more.</p>
+                    </article>
+
+                    <article class="program-card">
+                        <div class="program-meta">Sponsor</div>
+                        <h3>Sponsorship</h3>
+                        <p>Corporate sponsorships, in-kind donations, grants, and matching gifts.</p>
+                    </article>
+
+                    <article class="program-card">
+                        <div class="program-meta">General</div>
+                        <h3>Other Questions</h3>
+                        <p>Partnerships, press, outreach events, and program questions.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="image-panel">
+                <!-- Replace with your own photo (team, robot, or workshop) -->
+                <img src="images/granitestate.jpg" alt="Mayhem Robotics students and robot" />
+            </div>
+        </section>
+
+        <!-- The form -->
+        <section class="section" id="form">
+            <h3 class="section-title">Send a Message</h3>
+            <p class="section-subtitle">
+                This form sends directly to our team. Please include enough detail for us to respond effectively.
+            </p>
+
+            <!-- FORM OPTIONS:
+           A) Formspree (recommended): replace action URL below
+           B) Google Form embed (alternative): tell me if you want that instead
+      -->
+
+            <form action="https://formspree.io/f/mykypror" method="POST">
+                <!-- Helps Formspree route replies correctly -->
+                <input type="hidden" name="_subject" value="Mayhem Robotics Website Inquiry" />
+
+                <div class="two-column" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem;">
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required />
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required />
+                    </div>
+                </div>
+
+                <div class="two-column" style="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1rem;">
+                    <div>
+                        <label for="phone">Phone (optional)</label>
+                        <input id="phone" name="phone" type="text" autocomplete="tel" />
+                    </div>
+
+                    <div>
+                        <label for="topic">Topic</label>
+                        <select id="topic" name="topic" required
+                            style="width:100%; padding:0.55rem 0.7rem; border-radius:8px; border:1px solid #ccc; font:inherit;">
+                            <option value="" selected disabled>Select one</option>
+                            <option value="Join Mayhem">Join Mayhem</option>
+                            <option value="Mentor / Volunteer">Mentor / Volunteer</option>
+                            <option value="Sponsorship">Sponsorship</option>
+                            <option value="General Question">General Question</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required
+                    placeholder="Tell us what you're looking for (student age/grade, program interest, sponsorship details, etc.)."></textarea>
+
+                <!-- Simple anti-bot honeypot (bots fill it; humans don't) -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+                <div class="button-row">
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                    <a class="btn btn-outline" href="mailto:joinmayhem@mayhemrobotics.org?subject=Mayhem%20Robotics%20Website%20Contact&body=Hello%20Mayhem%20Robotics%20Team%2C%0D%0A%0D%0A
+I%20am%20reaching%20out%20from%20the%20website.%0D%0A%0D%0A
+Name%3A%0D%0A
+Phone%3A%0D%0A
+Topic%3A%0D%0A%0D%0A
+Message%3A%0D%0A">
+                        Or Email Us Instead
+                    </a>
+                </div>
+
+                <p style="margin-top: 0.9rem; color: var(--text-muted); font-size: 0.9rem;">
+                    We typically respond within 1–2 business days during the school year; response times may vary during
+                    events.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <div>&copy; <span id="year"></span> Mayhem Robotics, Inc. · 501(c)(3) nonprofit</div>
+            <div><a href="index.html">Home</a> · <a href="sponsors.html">Sponsors</a></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
