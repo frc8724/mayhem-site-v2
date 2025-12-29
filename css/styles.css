@@ -791,6 +791,56 @@ textarea {
   color: var(--text-muted);
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.social-links a:hover {
+  background: var(--teal);
+  transform: translateY(-1px);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--text-muted);
+}
+
+.social-links a:hover svg {
+  fill: white;
+}
+
+
+
 /* =========================================================
    Easter Egg (Hover) - Jorge swap
    Note: This is the desktop hover + keyboard focus behavior.
